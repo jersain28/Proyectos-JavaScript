@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>App OpenWeather</title>
+    <style>
+        body {
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            width:  100wh;
+            height: 100vh;
+            display: grid;
+            place-content: center;
+            background-color: aquamarine;
+        }
+
+        .container {
+            width: 70%;
+            text-align: center;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+        }
+
+        .container div{
+            width: 45%;
+        }
+
+        input{
+            width: 60%;
+            border: none;
+            border-bottom: 1px solid black;
+            padding: 10px;
+            background-color: none;
+            margin: 10px;
+        }
+
+        #btnCiudad{
+            background-color: blue;
+            border: none;
+            margin-top: 10px;
+            border-radius: 10px;
+            color: white;
+            font-weight: bold;
+            width: 60%;
+            padding: 5px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div id="left">
+            <h1>Clima Local</h1>
+            <hr>
+            <h2></h2>
+            <h3></h3>
+        </div>
+        <div id="right">
+            <h1>Consulta Ciudad</h1>
+            <hr>
+            <input type="tel" name="city" id="city" placeholder="Ciudad">
+            <br>
+            <button id="btnCiudad">Buscar</button>
+        </div>
+    </div>
+    <script src="./app.js"></script>
+</body>
+</html>
