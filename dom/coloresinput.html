@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Colores con Imputs</title>
+    <style>
+        body {
+            width: 100vw;
+            height: 100vh;
+            display: grid;
+            place-items: center;
+        }
+        .container {
+            width: 400px;
+            height: 300px;
+        }
+        .container * {
+            width: 100%;
+            margin-top: 15px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Colores con inputs</h1>
+        <h2>Arrastra y aplica</h2>
+        <input type="range" name="" id="red" value="0">
+        <br>
+        <input type="range" name="" id="green" value="0">
+        <br>
+        <input type="range" name="" id="blue" value="0">
+        <br>
+        <input type="range" name="" id="transparente" value="100">
+        <br>
+        <button onclick="setColor()">Set color</button>
+    </div>
+    <script src="./coloresinput.js"></script>
+</body>
+</html>
